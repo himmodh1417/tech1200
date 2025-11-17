@@ -64,22 +64,31 @@ Whether you're a **student**, a **data scientist** or an **AI researcher**, Cola
 The document you are reading is not a static web page, but an interactive environment called a **Colab notebook** that lets you write and execute code.
 
 For example, here is a **code cell** with a short Python script that computes a value, stores it in a variable, and prints the result:
-"""
 
-s= value_s
-store=50
-if store==50:
-  print("the number is checked,{s}")
-else:
-  print("the number is not checked,{s}")
-
-"""To execute the code in the above cell, select it with a click and then either press the play button to the left of the code, or use the keyboard shortcut "Command/Ctrl+Enter". To edit the code, just click the cell and start editing.
+To execute the code in the above cell, select it with a click and then either press the play button to the left of the code, or use the keyboard shortcut "Command/Ctrl+Enter". To edit the code, just click the cell and start editing.
 
 Variables that you define in one cell can later be used in other cells:
 """
 
 seconds_in_a_week = 7 * seconds_in_a_day
 seconds_in_a_week
+
+from IPython.core.compilerop import operator
+a=int(input("The number one is"))
+b=int(input("The number two is"))
+opertor=input("enter the operator")
+if opertor == "+":
+  print(a+b)
+elif opertor == "-":
+  print(a-b)
+elif opertor == "*":
+  print(a*b)
+elif opertor == "/":
+  print(a/b)
+else:
+  print("invalid operator")
+
+
 
 """Colab notebooks allow you to combine **executable code** and **rich text** in a single document, along with **images**, **HTML**, **LaTeX** and more. When you create your own Colab notebooks, they are stored in your Google Drive account. You can easily share your Colab notebooks with co-workers or friends, allowing them to comment on your notebooks or even edit them. To learn more, see [Overview of Colab](/notebooks/basic_features_overview.ipynb). To create a new Colab notebook you can use the File menu above, or use the following link: [create a new Colab notebook](http://colab.research.google.com#create=true).
 
